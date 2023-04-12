@@ -11,7 +11,7 @@ int main()
     double gallons, miles;
     cout << "Enter number of liters per 100 kilometers : "; cin >> gasoline_on_100_kilometers;
 
-    miles = (gasoline_on_100_kilometers / 100) * ratio_miles;
+    miles = ((ratio_miles * ratio_gallons) / gasoline_on_100_kilometers);
 
     cout << miles;
 
